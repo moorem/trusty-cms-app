@@ -1,0 +1,11 @@
+- @page_title = @layout.name + ' ' + t('layout') + ' - ' + default_page_title
+
+- render_region :main do |main|
+  - main.edit_header do
+    %h1= t('edit_layout')
+  - main.edit_form do
+    = render :partial => 'form'
+  - main.edit_popups do
+    = render :partial => "popups"
+
+- content_for :page_scripts

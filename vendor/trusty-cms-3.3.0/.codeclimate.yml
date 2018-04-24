@@ -1,0 +1,25 @@
+engines:
+  rubocop:
+    enabled: true
+  golint:
+    enabled: true
+  eslint:
+    enabled: true
+  csslint:
+    enabled: true
+ratings:
+  paths:
+  - app/**
+  - lib/**
+  - "**.rb"
+  - "**.go"
+exclude_paths:
+- spec/**/*
+- "**/vendor/**/*"
+- db/migrate/**/*
+- config/**/*
+- app/assets/javascripts/admin/jquery-ui.js
+- app/assets/javascripts/admin/jquery.treetable.js
+- app/assets/javascripts/admin/modernizr.js
+- app/assets/bower_components/**/*
+- app/assets/javascripts/ckeditor/*
