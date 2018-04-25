@@ -23,4 +23,5 @@ TrustyCms::Application.configure do
   # config.after_initialize do
   #   SiteController.cache_timeout = 12.hours
   # end
+  config.eager_load = true
 end
