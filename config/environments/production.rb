@@ -1,26 +1,25 @@
 TrustyCms::Application.configure do
   # Settings specified here will take precedence over those in config/environment.rb
 
-  # The production environment is meant for finished, "live" apps.
-  # Code is not reloaded between requests
-  config.cache_classes = true
+  # In the development environment your application's code is reloaded on
+  # every request.  This slows down response time but is perfect for development
+  # since you don't have to restart the webserver when you make code changes.
+  config.cache_classes     = false
 
-  # Use a different logger for distributed setups
-  # config.logger        = SyslogLogger.new
+  # Log error messages when you accidentally call methods on nil.
+  config.whiny_nils        = true
 
+  # Show full error reports and caching is turned off
+  config.consider_all_requests_local = true
+  #config.action_view.debug_rjs                         = true
+  config.action_controller.perform_caching             = false
+  config.eager_load = false
 
-  # Full error reports are disabled and caching is on
-  config.consider_all_requests_local = false
-  config.action_controller.perform_caching             = true
+  # Don't care if the mailer can't send
+  config.action_mailer.raise_delivery_errors = false
+  config.domain = ".local"
 
-  # Enable serving of images, stylesheets, and javascripts from an asset server
-  # config.action_controller.asset_host                  = "http://assets.example.com"
-
-  # Disable delivery errors if you bad email addresses should just be ignored
-  # config.action_mailer.raise_delivery_errors = false
-
-  # Cache your content for a longer time, the default is 5.minutes
-  # config.after_initialize do
-  #   SiteController.cache_timeout = 12.hours
-  # end
+  config.after_initialize do
+    SiteController.cache_timeout = 0.minutes
+  end
 end
