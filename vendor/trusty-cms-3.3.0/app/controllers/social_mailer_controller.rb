@@ -1,5 +1,5 @@
 class SocialMailerController < ApplicationController
-  trusty_layout "default", {:only => :create_social_mail}
+  #trusty_layout "default", {:only => :create_social_mail}
   no_login_required
 
   def create_social_mail
