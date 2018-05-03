@@ -131,6 +131,8 @@ module TrustyCms
       end
     end
 
+    config.extensions = [ :snippets, :clipped, :layouts, :multi_site ]
+
     config.after_initialize do
       extension_loader.load_extensions
       extension_loader.load_extension_initalizers
