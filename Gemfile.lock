@@ -1,7 +1,7 @@
 PATH
-  remote: vendor/gems/trusty-cms-3.3.3
+  remote: trusty-cms
   specs:
-    trusty-cms (3.3.3)
+    trusty-cms (3.3.4)
       RedCloth (= 4.3.2)
       acts_as_list (~> 0.9.5)
       acts_as_tree (~> 2.6.1)
@@ -75,7 +75,7 @@ GEM
       i18n (>= 0.7, < 2)
       minitest (~> 5.1)
       tzinfo (~> 1.1)
-    acts_as_list (0.9.11)
+    acts_as_list (0.9.12)
       activerecord (>= 3.0)
     acts_as_tree (2.6.1)
       activerecord (>= 3.0.0)
@@ -178,7 +178,7 @@ GEM
       httparty
       json
       multipart-post
-    libv8 (3.16.14.19-x86_64-darwin-17)
+    libv8 (3.16.14.19)
     listen (3.1.5)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
@@ -216,7 +216,7 @@ GEM
     public_suffix (3.0.2)
     puma (3.11.4)
     rack (2.0.5)
-    rack-cache (1.7.1)
+    rack-cache (1.7.2)
       rack (>= 0.4)
     rack-test (1.0.0)
       rack (>= 1.0, < 3)

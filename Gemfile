@@ -41,7 +41,7 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
 
-gem 'trusty-cms', path: 'vendor/gems/trusty-cms-3.3.3'
+gem 'trusty-cms', path: 'trusty-cms'
 gem 'rails-observers'
 gem 'jquery-rails'
 gem 'jquery-ui-rails'

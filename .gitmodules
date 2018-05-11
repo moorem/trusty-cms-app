@@ -1,0 +1,3 @@
+[submodule "trusty-cms"]
+	path = trusty-cms
+	url = https://github.com/pgharts/trusty-cms
